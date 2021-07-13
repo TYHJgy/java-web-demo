@@ -1,6 +1,6 @@
 package com.example.spring.exercise.controller;
 
-import com.example.spring.exercise.controller.rsp.BaseRsp;
+import com.example.common.dto.BaseRsp;
 import io.swagger.annotations.Api;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

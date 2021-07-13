@@ -1,8 +1,8 @@
 package com.example.spring.exercise.controller;
 
+import com.example.common.dto.BaseRsp;
 import com.example.spring.exercise.service.AopByAnnotationService;
 import com.example.spring.exercise.service.AopByMethodService;
-import com.example.spring.exercise.controller.rsp.BaseRsp;
 import io.swagger.annotations.Api;
 import javax.annotation.Resource;
 import org.slf4j.Logger;

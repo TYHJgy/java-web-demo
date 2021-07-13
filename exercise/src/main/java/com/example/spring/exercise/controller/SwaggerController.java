@@ -1,7 +1,6 @@
 package com.example.spring.exercise.controller;
 
 import com.example.spring.exercise.controller.rsp.AddUserParamRsp;
-import com.example.spring.exercise.controller.rsp.BaseRsp;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

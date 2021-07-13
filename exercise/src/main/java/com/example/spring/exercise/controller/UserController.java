@@ -1,6 +1,6 @@
 package com.example.spring.exercise.controller;
 
-import com.example.spring.exercise.controller.rsp.BaseRsp;
+import com.example.common.dto.BaseRsp;
 import com.example.spring.exercise.dao.entity.User;
 import com.example.spring.exercise.service.UserService;
 import io.swagger.annotations.Api;

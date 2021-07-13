@@ -1,7 +1,7 @@
 package com.example.spring.exercise.controller;
 
 
-import com.example.spring.exercise.controller.rsp.BaseRsp;
+import com.example.common.dto.BaseRsp;
 import com.example.spring.exercise.service.TestTransactionService;
 import io.swagger.annotations.Api;
 import javax.annotation.Resource;
