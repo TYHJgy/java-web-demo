@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Bean;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
-//@EnableSwagger2Doc
 @EnableSwagger2
 @SpringBootApplication
 @ImportAutoConfiguration({WebAppConfiguration.class})
