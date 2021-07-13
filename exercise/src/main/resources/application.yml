@@ -1,0 +1,17 @@
+my:
+  servers:
+    - yml1
+    - yml2
+
+  config:
+    name3:
+      year: 18
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_example?serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    default-property-inclusion: NON_EMPTY
