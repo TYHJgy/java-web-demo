@@ -1,10 +1,7 @@
 package com.example.spring.exercise.config;
 
-import com.example.spring.exercise.filter.MyFilter;
 import com.example.spring.exercise.interceptor.MyInterceptor;
-import javax.servlet.Filter;
 import lombok.Data;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistration;

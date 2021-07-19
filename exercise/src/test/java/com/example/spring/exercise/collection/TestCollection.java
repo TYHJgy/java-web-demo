@@ -52,9 +52,13 @@ class TestCollection {
   @Test
   void testArrayList2() {
     ArrayList<String> list = new ArrayList<>();
-    list.add("aaa");
     list.add("111");
+    list.add("222");
+    list.add("333");
+    list.add("444");
     LOGGER(list.size());
+    LOGGER(list.get(0));
+    list.remove(0);
     LOGGER(list.get(0));
     LOGGER(list.get(1));
   }

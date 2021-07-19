@@ -6,6 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class TestMyString {
 
+
+
   @Test
   void contextLoads() {
     System.out.println(TestMyString.class + "----" + "123");

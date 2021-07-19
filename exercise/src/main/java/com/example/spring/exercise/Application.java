@@ -6,13 +6,17 @@ import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-
+/**
+ * swagger （url:http://localhost:8003/swagger-ui.html）.
+ */
 @EnableSwagger2
 @SpringBootApplication
 @ImportAutoConfiguration({WebAppConfiguration.class})
+@EnableFeignClients
 public class Application {
 
   public static void main(String[] args) {
