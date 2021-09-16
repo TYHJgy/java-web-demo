@@ -1,12 +1,48 @@
 package com.example.spring.exercise.string;
 
+import java.util.Date;
+import org.apache.kafka.common.protocol.types.Field.Str;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class TestMyString {
+  //字符串常用方法
 
 
+  //字符串转整数
+  @Test
+  void testStrToInt(){
+    String str = "123";
+//    int a = Integer.parseInt(str);
+    long a2 = Long.parseLong(str);
+    System.out.println(a2);
+  }
+
+  //反转字符串
+  @Test
+  void testReverse(){
+    StringBuffer strb = new StringBuffer();
+    strb.append("abcdefg");
+    System.out.println(strb.reverse());
+  }
+
+  //字符串转换为时间
+  @Test
+  void testStrToDate(){
+    Date date = new Date();//"2020-10-01";
+    String str = String.format("yyyy-MM-dd", date);
+    System.out.println(date);
+
+  }
+
+  @Test
+  void testHash(){
+    String str = "132";
+
+    System.out.println(str.indexOf('2'));
+    System.out.println(str.hashCode());
+  }
 
   @Test
   void contextLoads() {
@@ -27,6 +63,7 @@ class TestMyString {
     System.out.println(s5 == s6);
     System.out.println(s6);
   }
+
 
   // 连接字符串
   @Test

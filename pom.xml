@@ -18,6 +18,33 @@
   <description>Demo project for Spring Boot</description>
 
 
+  <properties>
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+    <spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
+    <cxf.version>3.4.2</cxf.version>
+  </properties>
+
+
+  <profiles>
+
+    <profile>
+      <id>local</id>
+      <properties>
+        <build.profile.id>local</build.profile.id>
+        <spring.cloud.nacos.namespace>172982e5-0cd9-4dbc-8bce-5e46ac302e9b
+        </spring.cloud.nacos.namespace>
+        <spring.cloud.nacos.discovery.server-addr>127.0.0.1:8848
+        </spring.cloud.nacos.discovery.server-addr>
+        <spring.cloud.nacos.config.server-addr>127.0.0.1:8848
+        </spring.cloud.nacos.config.server-addr>
+        <spring.cloud.sentinel.transport.dashboard>127.0.0.1:8080
+        </spring.cloud.sentinel.transport.dashboard>
+      </properties>
+    </profile>
+  </profiles>
 
 
   <dependencies>

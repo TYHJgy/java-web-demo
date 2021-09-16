@@ -28,7 +28,7 @@ public class WebAppConfiguration implements WebMvcConfigurer {
     InterceptorRegistration interceptorRegistration = registry.addInterceptor(getMyInterceptor());
     // 配置拦截策略
 //    interceptorRegistration.addPathPatterns("/**");
-    interceptorRegistration.addPathPatterns("/interceptor");
+    interceptorRegistration.addPathPatterns("/interceptor/**");
     // 值越小，拦截器越靠前。
     interceptorRegistration.order(-90000);
   }

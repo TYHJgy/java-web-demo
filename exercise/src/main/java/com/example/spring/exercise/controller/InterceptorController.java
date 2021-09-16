@@ -18,9 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class InterceptorController {
   private Logger logger = LoggerFactory.getLogger(InterceptorController.class);
 
-  @GetMapping("")
-  public BaseRsp<Void> testInterceptor(){
-    logger.info("this is testInterceptor");
+  @GetMapping("enable")
+  public BaseRsp<Void> testInterceptor_enable(){
+    logger.info("this is testInterceptor_enable");
+    return BaseRsp.success();
+  }
+  @GetMapping("disable")
+  public BaseRsp<Void> testInterceptor_disable(){
+    logger.info("this is testInterceptor_disable");
     return BaseRsp.success();
   }
 

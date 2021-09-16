@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 /*
 *内置数据类型（7）：byte、short、int、long、float、double、char
 * */
-@SpringBootTest
+//@SpringBootTest
 class ExerciseApplicationTestBaseTybe {
     @Test
     void contextLoads() {

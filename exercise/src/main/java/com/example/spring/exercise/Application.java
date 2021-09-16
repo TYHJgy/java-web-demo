@@ -11,11 +11,11 @@ import org.springframework.context.annotation.Bean;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * swagger （url:http://localhost:8003/swagger-ui.html）.
+ * 打开swagger文档 （url:http://localhost:8003/swagger-ui.html）.
  */
 @EnableSwagger2
 @SpringBootApplication
-@ImportAutoConfiguration({WebAppConfiguration.class})
+//@ImportAutoConfiguration({WebAppConfiguration.class})
 @EnableFeignClients
 public class Application {
 
@@ -26,8 +26,8 @@ public class Application {
     application.run(args);
   }
   /*应用程序退出时（执行SpringApplication.exit()）会调用该方法*/
-  @Bean
-  public ExitCodeGenerator exitCodeGenerator() {
-    return () -> 42;
-  }
+//  @Bean
+//  public ExitCodeGenerator exitCodeGenerator() {
+//    return () -> 42;
+//  }
 }
